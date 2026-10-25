@@ -1,0 +1,308 @@
+{
+  "zh": {
+    "metaTitle": "李奕洲 · 软件工程师",
+    "metaDescription": "李奕洲，软件工程师。系统软件、分布式系统与发布质量。现于东莞华为从事系统软件测试管理。",
+    "skip": "跳到正文",
+    "pdf": "简历 PDF",
+    "pdfBusy": "正在生成…",
+    "pdfFail": "生成失败",
+    "nav": {
+      "about": "关于",
+      "experience": "经历",
+      "projects": "项目",
+      "education": "教育",
+      "skills": "能力",
+      "other": "其他",
+      "contact": "联系"
+    },
+    "name": "李奕洲",
+    "eyebrow": "个人站点 · 东莞",
+    "lede": "人在东莞，在华为做系统软件。测试和开发都做过，快手实习时也碰过一阵大模型。",
+    "facts": [
+      { "label": "现在", "value": "华为 · 系统软件测试经理" },
+      { "label": "方向", "value": "系统软件、分布式系统、性能与稳定性" },
+      { "label": "教育", "value": "美国东北大学硕士 · 马里兰大学学士" }
+    ],
+    "stats": [
+      { "value": "20", "label": "当前带领的测试团队" },
+      { "value": "80%+", "label": "开发者测试分支覆盖率" },
+      { "value": "20%", "label": "快手实习提升的资源利用率" },
+      { "value": "2000", "label": "分布式项目每秒处理次数" }
+    ],
+    "aboutTitle": "关于",
+    "about": [
+      "现在带大约 20 个人做测试，看着虚拟键盘、HiMouse 和文件管理。发布赶的时候，我主要看两件事：这次交不交得出去，漏掉的问题是从哪漏的。",
+      "再往前，我在同一条产品线上写代码，用 ArkTS 和 C++ 做折叠屏电脑的虚拟键盘和扩展显示模式。2023 年夏天在上海快手实习。本科在马里兰大学，硕士在美国东北大学。"
+    ],
+    "principlesLabel": "做事的时候",
+    "principles": [
+      { "title": "先看漏在哪", "body": "功能、性能和稳不稳，发布前放在一起看。真漏了，再查是用例没写到，还是没照着做。" },
+      { "title": "日志得能用", "body": "出了问题，日志里要说得清。说不清就只能猜。" },
+      { "title": "重复的交给脚本", "body": "回归和交付能自动化，就别靠人盯着。" }
+    ],
+    "experienceTitle": "经历",
+    "experience": [
+      {
+        "when": "2025.06 — 至今",
+        "where": "东莞",
+        "org": "华为技术有限公司",
+        "role": "测试经理 · 系统软件",
+        "bullets": [
+          "带领约 20 人的测试团队，覆盖虚拟键盘、HiMouse、文件管理等多个系统模块，在高压发布周期中稳住交付。",
+          "设计和执行端到端测试策略，覆盖功能、性能和稳定性。",
+          "对缺陷泄漏做根因分析，找出测试策略和执行上的缺口，提升发布质量。",
+          "编写自动化脚本，减少回归问题，提高测试效率。"
+        ]
+      },
+      {
+        "when": "2024.11 — 2025.06",
+        "where": "东莞",
+        "org": "华为技术有限公司",
+        "role": "软件开发工程师 · 系统软件",
+        "bullets": [
+          "用 ArkTS 和 C++ 开发华为折叠屏电脑的系统功能，包括虚拟键盘和扩展显示模式（Exfusion）。",
+          "定位并解决性能瓶颈和功能问题，改善系统响应和稳定性。",
+          "设计开发者级测试用例，将分支覆盖率做到 80% 以上。",
+          "通过系统级日志和分析增强可观测性，方便调试和优化。",
+          "自动化二进制交付的 CI/CD 流水线，减少手工集成。"
+        ]
+      },
+      {
+        "when": "2023.05 — 2023.08",
+        "where": "上海",
+        "org": "北京快手科技有限公司",
+        "role": "算法开发实习生 · AI 系统",
+        "bullets": [
+          "使用 TensorFlow 和 PyTorch 优化大语言模型的分布式训练与推理，资源利用率提升约 20%。",
+          "分析 vLLM 推理引擎，并与 Faster Transformer 做性能对比。",
+          "评估 Paged Attention 机制和 LLaMA-7B 的推理效率，为框架选择提供依据。"
+        ]
+      }
+    ],
+    "projectsTitle": "项目",
+    "project": {
+      "when": "2024.01 — 2024.05",
+      "title": "高并发分布式处理系统",
+      "summary": "一套面向高并发的分布式系统。请求进来之后，用负载均衡摊到多台服务上，耗时的工作丢进队列异步处理，避免前后端缠在一起。",
+      "bullets": [
+        "处理约 20 万次请求，吞吐约 2000 次/秒。",
+        "架构基于 AWS EC2、负载均衡和多台 Tomcat。",
+        "用 RabbitMQ 做异步处理，把系统拆开，提高后端可靠性。",
+        "通过动态线程分配提升高并发下的吞吐。"
+      ],
+      "facts": [
+        { "label": "规模", "value": "约 20 万次请求" },
+        { "label": "吞吐", "value": "约 2000 次/秒" },
+        { "label": "栈", "value": "AWS EC2 · Tomcat · RabbitMQ" }
+      ],
+      "url": "https://github.com/lyz-sys/neu-cs6650-projects-v2",
+      "urlLabel": "github.com/lyz-sys/neu-cs6650-projects-v2"
+    },
+    "educationTitle": "教育",
+    "education": [
+      { "when": "2022.08 — 2024.05", "degree": "计算机科学硕士", "school": "美国东北大学 · Northeastern University", "diploma": "美国东北大学硕士文凭" },
+      { "when": "2018.08 — 2022.05", "degree": "计算机科学学士", "school": "马里兰大学 · University of Maryland", "diploma": "马里兰大学学士文凭" }
+    ],
+    "skillsTitle": "能力",
+    "skills": [
+      { "label": "语言", "value": "C++、Java、Python、ArkTS" },
+      { "label": "系统", "value": "分布式系统、系统优化、性能调优" },
+      { "label": "工具", "value": "AWS、RabbitMQ、CI/CD、Docker、JMeter" },
+      { "label": "关注点", "value": "高并发、异步处理、系统可靠性" }
+    ],
+    "otherTitle": "其他",
+    "githubLead": " · 代码和一些旧项目都在这里。",
+    "interests": [
+      {
+        "kicker": "在玩",
+        "title": "桌游和剧本杀",
+        "body": ""
+      },
+      {
+        "kicker": "在做",
+        "title": "创作游戏",
+        "body": "我在做自己的游戏。《争斗校花》挂在公网上，打开卡片就能进。"
+      }
+    ],
+    "github": {
+      "href": "https://github.com/lyz-sys",
+      "label": "github.com/lyz-sys"
+    },
+    "repos": [
+      { "name": "Z1 Battle Arena", "url": "https://github.com/lyz-sys/Z1-s-Battle-Arena", "body": "用 Unity 做的对战竞技场。" },
+      { "name": "SpaceShooterX", "url": "https://github.com/lyz-sys/SpaceShooterX", "body": "用 SceneKit 做的 3D 太空射击，横屏玩。" }
+    ],
+    "game": {
+      "kicker": "校园策略对战",
+      "title": "争斗校花",
+      "tagline": "六回合内读懂暗示、争夺资源，赢得校花青睐。",
+      "url": "https://lyz-school-battle.ggff.net/",
+      "host": "lyz-school-battle.ggff.net"
+    },
+    "contactTitle": "联系",
+    "contactLead": "想合作，或者只是打个招呼，微信或电话联系就行。",
+    "emailLabel": "邮箱",
+    "phoneLabel": "电话",
+    "wechatLabel": "微信",
+    "channels": {
+      "email": "lyzpp2000@163.com",
+      "emailHref": "mailto:lyzpp2000@163.com",
+      "phone": "+86 185 7693 0287",
+      "phoneHref": "tel:+8618576930287",
+      "wechat": "yizhou_lyz"
+    }
+  },
+  "en": {
+    "metaTitle": "Ian · Software Engineer",
+    "metaDescription": "Ian, a software engineer in Dongguan. System software, distributed systems, and release quality. Currently a testing manager at Huawei.",
+    "skip": "Skip to content",
+    "pdf": "Resume PDF",
+    "pdfBusy": "Generating…",
+    "pdfFail": "Couldn't generate",
+    "nav": {
+      "about": "About",
+      "experience": "Experience",
+      "projects": "Projects",
+      "education": "Education",
+      "skills": "Skills",
+      "other": "Other",
+      "contact": "Contact"
+    },
+    "name": "Ian",
+    "eyebrow": "Personal site · Dongguan",
+    "lede": "I live in Dongguan and work on system software at Huawei. I've done both testing and development, and spent a summer at Kuaishou on large models.",
+    "facts": [
+      { "label": "Now", "value": "Huawei · Testing Manager, System Software" },
+      { "label": "Focus", "value": "System software, distributed systems, performance and stability" },
+      { "label": "Education", "value": "M.S. Northeastern · B.S. Maryland" }
+    ],
+    "stats": [
+      { "value": "20", "label": "People on the testing team I lead" },
+      { "value": "80%+", "label": "Branch coverage in developer tests" },
+      { "value": "20%", "label": "Resource-utilization gain during the internship" },
+      { "value": "2000", "label": "Requests per second in the distributed project" }
+    ],
+    "aboutTitle": "About",
+    "about": [
+      "I lead a testing team of about 20, on the virtual keyboard, HiMouse, and file manager. When a release is tight, I watch two things: whether we can actually ship, and where a missed bug slipped through.",
+      "Before that I was on the same product line, writing the foldable PC's virtual keyboard and Exfusion display mode in ArkTS and C++. In the summer of 2023 I interned at Kuaishou in Shanghai. I did my bachelor's at Maryland and my master's at Northeastern."
+    ],
+    "principlesLabel": "When I work",
+    "principles": [
+      { "title": "Find the leak", "body": "Function, performance, and stability get looked at together before a release. If something escapes, I check whether the case was missing or just not run." },
+      { "title": "Logs have to work", "body": "If the log can't explain the bug, the next step is guessing." },
+      { "title": "Script the repetition", "body": "If regression or delivery can be automated, it shouldn't depend on someone watching." }
+    ],
+    "experienceTitle": "Experience",
+    "experience": [
+      {
+        "when": "2025.06 — Present",
+        "where": "Dongguan",
+        "org": "Huawei Technologies",
+        "role": "Testing Manager · System Software",
+        "bullets": [
+          "Led a testing team of about 20 across the virtual keyboard, HiMouse, and file manager, keeping delivery stable through tight release cycles.",
+          "Designed and ran end-to-end test strategies covering function, performance, and stability.",
+          "Traced escaped defects to gaps in strategy or execution, and used that to improve release quality.",
+          "Wrote automation scripts that reduced regression issues and sped up testing."
+        ]
+      },
+      {
+        "when": "2024.11 — 2025.06",
+        "where": "Dongguan",
+        "org": "Huawei Technologies",
+        "role": "Software Developer · System Software",
+        "bullets": [
+          "Built system features for Huawei's foldable PC, including the virtual keyboard and Exfusion display mode, in ArkTS and C++.",
+          "Found and fixed performance bottlenecks and functional bugs, improving responsiveness and stability.",
+          "Designed developer-level tests and raised branch coverage above 80%.",
+          "Added system-level logging and analytics so debugging and optimization had evidence to work from.",
+          "Automated the CI/CD pipeline for binary delivery and cut down manual integration."
+        ]
+      },
+      {
+        "when": "2023.05 — 2023.08",
+        "where": "Shanghai",
+        "org": "Beijing Kuaishou Technology",
+        "role": "Algorithm Developer Intern · AI Systems",
+        "bullets": [
+          "Optimized distributed training and inference for large language models with TensorFlow and PyTorch, improving resource utilization by about 20%.",
+          "Analyzed the vLLM inference engine and benchmarked it against Faster Transformer.",
+          "Evaluated Paged Attention and LLaMA-7B inference efficiency to inform the framework choice."
+        ]
+      }
+    ],
+    "projectsTitle": "Projects",
+    "project": {
+      "when": "2024.01 — 2024.05",
+      "title": "High-concurrency distributed system",
+      "summary": "A distributed system built for high concurrency. Incoming requests are spread across servers, and slower work is queued so the front and back ends are not tied together.",
+      "bullets": [
+        "Handled about 200,000 requests at roughly 2,000 per second.",
+        "Architecture used AWS EC2, a load balancer, and multiple Tomcat servers.",
+        "Used RabbitMQ for asynchronous processing, decoupling the system and making the backend more reliable.",
+        "Raised throughput under high concurrency with dynamic thread allocation."
+      ],
+      "facts": [
+        { "label": "Scale", "value": "About 200,000 requests" },
+        { "label": "Throughput", "value": "About 2,000 / sec" },
+        { "label": "Stack", "value": "AWS EC2 · Tomcat · RabbitMQ" }
+      ],
+      "url": "https://github.com/lyz-sys/neu-cs6650-projects-v2",
+      "urlLabel": "github.com/lyz-sys/neu-cs6650-projects-v2"
+    },
+    "educationTitle": "Education",
+    "education": [
+      { "when": "2022.08 — 2024.05", "degree": "M.S. Computer Science", "school": "Northeastern University, USA", "diploma": "Northeastern University master's diploma" },
+      { "when": "2018.08 — 2022.05", "degree": "B.S. Computer Science", "school": "University of Maryland", "diploma": "University of Maryland bachelor's diploma" }
+    ],
+    "skillsTitle": "Skills",
+    "skills": [
+      { "label": "Languages", "value": "C++, Java, Python, ArkTS" },
+      { "label": "Systems", "value": "Distributed systems, system optimization, performance tuning" },
+      { "label": "Tools", "value": "AWS, RabbitMQ, CI/CD, Docker, JMeter" },
+      { "label": "Focus", "value": "High concurrency, asynchronous processing, reliability" }
+    ],
+    "otherTitle": "Other",
+    "githubLead": " · Code and older projects live here.",
+    "interests": [
+      {
+        "kicker": "Playing",
+        "title": "Board games and mystery games",
+        "body": ""
+      },
+      {
+        "kicker": "Making",
+        "title": "Creating games",
+        "body": "I make my own games. 争斗校花 is on the public web — the card below opens it."
+      }
+    ],
+    "github": {
+      "href": "https://github.com/lyz-sys",
+      "label": "github.com/lyz-sys"
+    },
+    "repos": [
+      { "name": "Z1 Battle Arena", "url": "https://github.com/lyz-sys/Z1-s-Battle-Arena", "body": "A battle arena made in Unity." },
+      { "name": "SpaceShooterX", "url": "https://github.com/lyz-sys/SpaceShooterX", "body": "A 3D space shooter in SceneKit, played in landscape." }
+    ],
+    "game": {
+      "kicker": "Campus strategy",
+      "title": "争斗校花",
+      "tagline": "Read the signals, contest resources, and win favor within six rounds.",
+      "url": "https://lyz-school-battle.ggff.net/",
+      "host": "lyz-school-battle.ggff.net"
+    },
+    "contactTitle": "Contact",
+    "contactLead": "For work, or just to say hello, reach me on WeChat or by phone.",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "wechatLabel": "WeChat",
+    "channels": {
+      "email": "lyzpp2000@163.com",
+      "emailHref": "mailto:lyzpp2000@163.com",
+      "phone": "+86 185 7693 0287",
+      "phoneHref": "tel:+8618576930287",
+      "wechat": "yizhou_lyz"
+    }
+  }
+}

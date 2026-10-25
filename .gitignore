@@ -1,0 +1,3 @@
+logs/
+*.log
+scripts/keep-alive-autostart.cmd

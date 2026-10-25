@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>李奕洲 · 软件工程师</title>
+    <meta
+      name="description"
+      content="李奕洲，软件工程师。系统软件、分布式系统与发布质量。现于东莞华为从事系统软件测试管理。"
+    />
+    <meta name="author" content="李奕洲" />
+    <meta name="theme-color" content="#e7e1d6" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      (function () {
+        var lang = "zh";
+        try {
+          lang = localStorage.getItem("site-lang") === "en" ? "en" : "zh";
+        } catch (e) {}
+        document.documentElement.lang = lang === "en" ? "en" : "zh-CN";
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#about" data-i18n="skip">跳到正文</a>
+
+    <nav class="nav" aria-label="页面">
+      <a class="brand" href="#top" data-i18n="name">李奕洲</a>
+      <div class="nav-links">
+        <a href="#about" data-i18n="nav.about">关于</a>
+        <a href="#experience" data-i18n="nav.experience">经历</a>
+        <a href="#education" data-i18n="nav.education">教育</a>
+        <a href="#skills" data-i18n="nav.skills">能力</a>
+        <a href="#other" data-i18n="nav.other">其他</a>
+        <a href="#contact" data-i18n="nav.contact">联系</a>
+      </div>
+      <div class="nav-tools">
+        <button class="pdf-btn" type="button" data-i18n="pdf">简历 PDF</button>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="zh" aria-pressed="true">中文</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero" id="top">
+      <div class="hero-main wrap">
+        <p class="eyebrow" data-i18n="eyebrow">个人站点 · 东莞</p>
+        <h1 data-i18n="name">李奕洲</h1>
+        <div class="hero-grid">
+          <p class="lede" data-i18n="lede">
+            人在东莞，在华为做系统软件。测试和开发都做过，快手实习时也碰过一阵大模型。
+          </p>
+          <div class="hero-side">
+            <img class="portrait" src="assets/portrait.jpg" alt="李奕洲" data-i18n-alt="name" />
+          <dl class="facts">
+            <div>
+              <dt data-i18n="facts.0.label">现在</dt>
+              <dd data-i18n="facts.0.value">华为 · 系统软件测试经理</dd>
+            </div>
+            <div>
+              <dt data-i18n="facts.1.label">方向</dt>
+              <dd data-i18n="facts.1.value">系统软件、分布式系统、性能与稳定性</dd>
+            </div>
+            <div>
+              <dt data-i18n="facts.2.label">教育</dt>
+              <dd data-i18n="facts.2.value">美国东北大学硕士 · 马里兰大学学士</dd>
+            </div>
+          </dl>
+          </div>
+        </div>
+      </div>
+
+      <ul class="stats wrap">
+        <li>
+          <strong data-i18n="stats.0.value">20</strong>
+          <span data-i18n="stats.0.label">当前带领的测试团队</span>
+        </li>
+        <li>
+          <strong data-i18n="stats.1.value">80%+</strong>
+          <span data-i18n="stats.1.label">开发者测试分支覆盖率</span>
+        </li>
+        <li>
+          <strong data-i18n="stats.2.value">20%</strong>
+          <span data-i18n="stats.2.label">快手实习提升的资源利用率</span>
+        </li>
+        <li>
+          <strong data-i18n="stats.3.value">2000</strong>
+          <span data-i18n="stats.3.label">分布式项目每秒处理次数</span>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="section wrap" id="about">
+        <div class="section-head">
+          <p class="index">01</p>
+          <h2 data-i18n="aboutTitle">关于</h2>
+        </div>
+        <div class="about-layout">
+          <div class="prose">
+            <p data-i18n="about.0">现在带大约 20 个人做测试，看着虚拟键盘、HiMouse 和文件管理。发布赶的时候，我主要看两件事：这次交不交得出去，漏掉的问题是从哪漏的。</p>
+            <p data-i18n="about.1">再往前，我在同一条产品线上写代码，用 ArkTS 和 C++ 做折叠屏电脑的虚拟键盘和扩展显示模式。2023 年夏天在上海快手实习。本科在马里兰大学，硕士在美国东北大学。</p>
+          </div>
+          <aside class="principles">
+            <p class="aside-label" data-i18n="principlesLabel">做事的时候</p>
+            <article>
+              <h3 data-i18n="principles.0.title">先看漏在哪</h3>
+              <p data-i18n="principles.0.body">功能、性能和稳不稳，发布前放在一起看。真漏了，再查是用例没写到，还是没照着做。</p>
+            </article>
+            <article>
+              <h3 data-i18n="principles.1.title">日志得能用</h3>
+              <p data-i18n="principles.1.body">出了问题，日志里要说得清。说不清就只能猜。</p>
+            </article>
+            <article>
+              <h3 data-i18n="principles.2.title">重复的交给脚本</h3>
+              <p data-i18n="principles.2.body">回归和交付能自动化，就别靠人盯着。</p>
+            </article>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section wrap" id="experience">
+        <div class="section-head">
+          <p class="index">02</p>
+          <h2 data-i18n="experienceTitle">经历</h2>
+        </div>
+        <div class="timeline">
+          <article class="role">
+            <div class="role-meta">
+              <p class="role-when" data-i18n="experience.0.when">2025.06 — 至今</p>
+              <p class="role-where" data-i18n="experience.0.where">东莞</p>
+            </div>
+            <div class="role-body">
+              <p class="role-org" data-i18n="experience.0.org">华为技术有限公司</p>
+              <h3 data-i18n="experience.0.role">测试经理 · 系统软件</h3>
+              <ul>
+                <li data-i18n="experience.0.bullets.0">带领约 20 人的测试团队，覆盖虚拟键盘、HiMouse、文件管理等多个系统模块，在高压发布周期中稳住交付。</li>
+                <li data-i18n="experience.0.bullets.1">设计和执行端到端测试策略，覆盖功能、性能和稳定性。</li>
+                <li data-i18n="experience.0.bullets.2">对缺陷泄漏做根因分析，找出测试策略和执行上的缺口，提升发布质量。</li>
+                <li data-i18n="experience.0.bullets.3">编写自动化脚本，减少回归问题，提高测试效率。</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="role">
+            <div class="role-meta">
+              <p class="role-when" data-i18n="experience.1.when">2024.11 — 2025.06</p>
+              <p class="role-where" data-i18n="experience.1.where">东莞</p>
+            </div>
+            <div class="role-body">
+              <p class="role-org" data-i18n="experience.1.org">华为技术有限公司</p>
+              <h3 data-i18n="experience.1.role">软件开发工程师 · 系统软件</h3>
+              <ul>
+                <li data-i18n="experience.1.bullets.0">用 ArkTS 和 C++ 开发华为折叠屏电脑的系统功能，包括虚拟键盘和扩展显示模式（Exfusion）。</li>
+                <li data-i18n="experience.1.bullets.1">定位并解决性能瓶颈和功能问题，改善系统响应和稳定性。</li>
+                <li data-i18n="experience.1.bullets.2">设计开发者级测试用例，将分支覆盖率做到 80% 以上。</li>
+                <li data-i18n="experience.1.bullets.3">通过系统级日志和分析增强可观测性，方便调试和优化。</li>
+                <li data-i18n="experience.1.bullets.4">自动化二进制交付的 CI/CD 流水线，减少手工集成。</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="role">
+            <div class="role-meta">
+              <p class="role-when" data-i18n="experience.2.when">2023.05 — 2023.08</p>
+              <p class="role-where" data-i18n="experience.2.where">上海</p>
+            </div>
+            <div class="role-body">
+              <p class="role-org" data-i18n="experience.2.org">北京快手科技有限公司</p>
+              <h3 data-i18n="experience.2.role">算法开发实习生 · AI 系统</h3>
+              <ul>
+                <li data-i18n="experience.2.bullets.0">使用 TensorFlow 和 PyTorch 优化大语言模型的分布式训练与推理，资源利用率提升约 20%。</li>
+                <li data-i18n="experience.2.bullets.1">分析 vLLM 推理引擎，并与 Faster Transformer 做性能对比。</li>
+                <li data-i18n="experience.2.bullets.2">评估 Paged Attention 机制和 LLaMA-7B 的推理效率，为框架选择提供依据。</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section wrap" id="education">
+        <div class="section-head">
+          <p class="index">03</p>
+          <h2 data-i18n="educationTitle">教育</h2>
+        </div>
+        <div class="schools">
+          <article>
+            <p class="role-when" data-i18n="education.0.when">2022.08 — 2024.05</p>
+            <h3 data-i18n="education.0.degree">计算机科学硕士</h3>
+            <p data-i18n="education.0.school">美国东北大学 · Northeastern University</p>
+            <a class="diploma-link" href="assets/diploma-neu.jpg" target="_blank" rel="noopener noreferrer">
+              <img src="assets/diploma-neu.jpg" alt="美国东北大学硕士文凭" data-i18n-alt="education.0.diploma" />
+            </a>
+          </article>
+          <article>
+            <p class="role-when" data-i18n="education.1.when">2018.08 — 2022.05</p>
+            <h3 data-i18n="education.1.degree">计算机科学学士</h3>
+            <p data-i18n="education.1.school">马里兰大学 · University of Maryland</p>
+            <a class="diploma-link" href="assets/diploma-umd.jpg" target="_blank" rel="noopener noreferrer">
+              <img src="assets/diploma-umd.jpg" alt="马里兰大学学士文凭" data-i18n-alt="education.1.diploma" />
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section wrap" id="skills">
+        <div class="section-head">
+          <p class="index">04</p>
+          <h2 data-i18n="skillsTitle">能力</h2>
+        </div>
+        <dl class="skills">
+          <div>
+            <dt data-i18n="skills.0.label">语言</dt>
+            <dd data-i18n="skills.0.value">C++、Java、Python、ArkTS</dd>
+          </div>
+          <div>
+            <dt data-i18n="skills.1.label">系统</dt>
+            <dd data-i18n="skills.1.value">分布式系统、系统优化、性能调优</dd>
+          </div>
+          <div>
+            <dt data-i18n="skills.2.label">工具</dt>
+            <dd data-i18n="skills.2.value">AWS、RabbitMQ、CI/CD、Docker、JMeter</dd>
+          </div>
+          <div>
+            <dt data-i18n="skills.3.label">关注点</dt>
+            <dd data-i18n="skills.3.value">高并发、异步处理、系统可靠性</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="section wrap" id="other">
+        <div class="section-head">
+          <p class="index">05</p>
+          <h2 data-i18n="otherTitle">其他</h2>
+        </div>
+        <p class="github-line">
+          <a href="https://github.com/lyz-sys" data-i18n-href="github.href" data-i18n="github.label" target="_blank" rel="noopener noreferrer">github.com/lyz-sys</a>
+          <span data-i18n="githubLead"> · 代码和一些旧项目都在这里。</span>
+        </p>
+        <article class="project">
+          <div class="project-main">
+            <p class="role-when" data-i18n="project.when">2024.01 — 2024.05</p>
+            <h3 data-i18n="project.title">高并发分布式处理系统</h3>
+            <p data-i18n="project.summary">一套面向高并发的分布式系统。请求进来之后，用负载均衡摊到多台服务上，耗时的工作丢进队列异步处理，避免前后端缠在一起。</p>
+            <ul>
+              <li data-i18n="project.bullets.0">处理约 20 万次请求，吞吐约 2000 次/秒。</li>
+              <li data-i18n="project.bullets.1">架构基于 AWS EC2、负载均衡和多台 Tomcat。</li>
+              <li data-i18n="project.bullets.2">用 RabbitMQ 做异步处理，把系统拆开，提高后端可靠性。</li>
+              <li data-i18n="project.bullets.3">通过动态线程分配提升高并发下的吞吐。</li>
+            </ul>
+            <p class="project-link"><a href="https://github.com/lyz-sys/neu-cs6650-projects-v2" data-i18n-href="project.url" data-i18n="project.urlLabel" target="_blank" rel="noopener noreferrer">github.com/lyz-sys/neu-cs6650-projects-v2</a></p>
+          </div>
+          <dl class="project-facts">
+            <div>
+              <dt data-i18n="project.facts.0.label">规模</dt>
+              <dd data-i18n="project.facts.0.value">约 20 万次请求</dd>
+            </div>
+            <div>
+              <dt data-i18n="project.facts.1.label">吞吐</dt>
+              <dd data-i18n="project.facts.1.value">约 2000 次/秒</dd>
+            </div>
+            <div>
+              <dt data-i18n="project.facts.2.label">栈</dt>
+              <dd data-i18n="project.facts.2.value">AWS EC2 · Tomcat · RabbitMQ</dd>
+            </div>
+          </dl>
+        </article>
+        <div class="interests">
+          <article class="interest">
+            <p class="interest-kicker" data-i18n="interests.0.kicker">在玩</p>
+            <h3 data-i18n="interests.0.title">桌游和剧本杀</h3>
+            <p data-i18n="interests.0.body"></p>
+          </article>
+          <article class="interest">
+            <p class="interest-kicker" data-i18n="interests.1.kicker">在做</p>
+            <h3 data-i18n="interests.1.title">创作游戏</h3>
+            <p data-i18n="interests.1.body">我在做自己的游戏。《争斗校花》挂在公网上，打开卡片就能进。</p>
+            <a class="game-card" href="https://lyz-school-battle.ggff.net/" data-i18n-href="game.url" target="_blank" rel="noopener noreferrer">
+              <img src="assets/game-icon.svg" alt="" width="72" height="72" />
+              <span>
+                <span class="game-kicker" data-i18n="game.kicker">校园策略对战</span>
+                <strong class="game-title" data-i18n="game.title">争斗校花</strong>
+                <span class="game-tagline" data-i18n="game.tagline">六回合内读懂暗示、争夺资源，赢得校花青睐。</span>
+                <span class="game-url" data-i18n="game.host">lyz-school-battle.ggff.net</span>
+              </span>
+            </a>
+          </article>
+        </div>
+        <div class="repo-grid">
+          <a class="repo-card" href="https://github.com/lyz-sys/Z1-s-Battle-Arena" data-i18n-href="repos.0.url" target="_blank" rel="noopener noreferrer">
+            <span class="interest-kicker">GitHub</span>
+            <strong data-i18n="repos.0.name">Z1 Battle Arena</strong>
+            <span data-i18n="repos.0.body">用 Unity 做的对战竞技场。</span>
+          </a>
+          <a class="repo-card" href="https://github.com/lyz-sys/SpaceShooterX" data-i18n-href="repos.1.url" target="_blank" rel="noopener noreferrer">
+            <span class="interest-kicker">GitHub</span>
+            <strong data-i18n="repos.1.name">SpaceShooterX</strong>
+            <span data-i18n="repos.1.body">用 SceneKit 做的 3D 太空射击，横屏玩。</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section wrap" id="contact">
+        <div class="section-head">
+          <p class="index">06</p>
+          <h2 data-i18n="contactTitle">联系</h2>
+        </div>
+        <div class="contact">
+          <p class="contact-lead" data-i18n="contactLead">想合作，或者只是打个招呼，微信或电话联系就行。</p>
+          <ul class="contact-list">
+            <li>
+              <span data-i18n="emailLabel">邮箱</span>
+              <a href="mailto:lyzpp2000@163.com" data-i18n-href="channels.emailHref" data-i18n="channels.email">lyzpp2000@163.com</a>
+            </li>
+            <li>
+              <span data-i18n="phoneLabel">电话</span>
+              <a href="tel:+8618576930287" data-i18n-href="channels.phoneHref" data-i18n="channels.phone">+86 185 7693 0287</a>
+            </li>
+            <li>
+              <span data-i18n="wechatLabel">微信</span>
+              <span class="wechat-id" data-i18n="channels.wechat">yizhou_lyz</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer wrap">
+      <p>© <span data-year>2026</span> <span data-i18n="name">李奕洲</span></p>
+    </footer>
+
+    <script src="js/site.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "myself",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "start:keepalive": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/keep-alive.ps1",
+    "autostart:install": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/install-autostart.ps1",
+    "autostart:uninstall": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/uninstall-autostart.ps1"
+  }
+}
